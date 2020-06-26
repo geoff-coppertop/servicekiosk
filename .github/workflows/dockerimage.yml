@@ -9,7 +9,7 @@ on:
         branches: master
         tags:
             - v*
-    repository_dispatch
+    repository_dispatch:
 
 jobs:
     servicekiosk:
