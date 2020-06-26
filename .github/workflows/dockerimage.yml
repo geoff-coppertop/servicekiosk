@@ -1,14 +1,15 @@
 name: Kiosk Service Build/Publish
 
 on:
-  schedule:
-    - cron: '0 3 * * *' # everyday at 3am
-  pull_request:
-    branches: master
-  push:
-    branches: master
-    tags:
-      - v*
+    schedule:
+        - cron: '0 3 * * *' # everyday at 3am
+    pull_request:
+        branches: master
+    push:
+        branches: master
+        tags:
+            - v*
+    repository_dispatch
 
 jobs:
     servicekiosk:
