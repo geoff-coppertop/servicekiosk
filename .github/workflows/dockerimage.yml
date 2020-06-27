@@ -1,8 +1,6 @@
 name: Kiosk Service Build/Publish
 
 on:
-    schedule:
-        - cron: '0 3 * * *' # everyday at 3am
     pull_request:
         branches: master
     push:
@@ -12,7 +10,7 @@ on:
     repository_dispatch:
 
 jobs:
-    servicekiosk:
+    build:
         runs-on: ubuntu-latest
 
         steps:
